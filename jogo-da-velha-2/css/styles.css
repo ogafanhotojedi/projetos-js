@@ -1,0 +1,49 @@
+/* ÁREA DO JOGO [ENGLOBA TODOS OS OUTROS ELEMENTOS] */
+#jogo {
+    margin: auto;
+    width: 252px;
+}
+
+/* PLAYER */
+img{
+    border: 0;
+    height: 50px;
+}
+
+/* MOSTRADOR */
+#mostrador {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#mostrador p{
+    float: left;
+    margin-right: 10px;
+}
+
+/* TABULEIRO */
+/* criando os espaços, cria-se a estrutura do tabuleiro, só que com essas configurações, fica uma linha */
+.espaco{
+    width: 80px;
+    height: 60px;
+    border: 2px solid #000;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+/* reduzindo o tamanho do tabuleiro consegue-se então colocar 3 espaços por linha */
+#tabuleiro{
+    width: 252px; /* 3x84px(2px de borda + 80px + 2px de borda) */
+}
+/* para remover as bordas laterais do tabuleiro */
+#a1, #a2, #a3{
+    border-top: none;
+}
+#a1, #b1, #c1{
+    border-left: none;
+}
+#c1, #c2, #c3{
+    border-bottom: none;
+}
+#a3, #b3, #c3{
+    border-right: none;
+}

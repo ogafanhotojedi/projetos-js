@@ -56,12 +56,16 @@ function checkWinCondition(){
     let b8 = document.querySelector("#block-8");
     let b9 = document.querySelector("#block-9");
 
-    console.log("ola");
+    
     
     // horizontal
 
     if((b1 && b2 && b3).hasChildNodes){
-        if((b1 && b2 && b3).childNodes[0].className == "x"){
+        b1Child = b1.childNodes[0].className;
+        b2Child = b2.childNodes[0].className;
+        b3Child = b3.childNodes[0].className;
+        console.log(b1Child, b2Child, b3Child);
+        if (b1Child == "x" && b2Child == "x" && b3Child == "x"){
             // x venceu
             console.log("x venceu");
         } else{
