@@ -8,10 +8,10 @@ const FeatureList = [
     Svg: require('@site/static/img/jogo_da_velha.svg').default,
     description: (
       <>
-        Projeto construído com <b>HTML5, CSS3, JavaScript</b>.<br/>
-        Dois modos de jogo foram implementados: <i>2 Jogadores</i> ou <i>Contra a IA</i>, no qual uma foi implementada uma inteligência artificial que permite jogar contra a máquina.
+        <b>HTML5 | CSS3 | JavaScript</b><br/>
+        Dois modos de jogo foram implementados: <i>2 Jogadores</i> ou <i>Contra a IA</i>, no qual foi implementada uma inteligência artificial que permite jogar contra a máquina.
       </>
-    ),
+    ), 
   },
   {
     title: 'Focus on What Matters',
@@ -42,7 +42,7 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+       <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
