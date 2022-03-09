@@ -14,4 +14,12 @@ function jogar(id){
     vez = checarVez ? JOGADOR_X : JOGADOR_O;
     celula.textContent = vez;
     checarVez = !checarVez;
+    //atualizando o mostrador
+    var player = document.querySelectorAll("div#mostrador img")[0];
+    if(vez == JOGADOR_X){
+        player.setAttribute("src", "imagens/x.png");
+    } else{
+        player.setAttribute("src", "imagens/o.png");
+    }
+    
 }
