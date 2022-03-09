@@ -1,5 +1,5 @@
 # projetos js
-## Exercícios de cursos JavaScript
+## Exercícios JavaScript [Projetos Práticos]
 
 #### Listando:
 1. Jogo da Velha (HTML, CSS, DOM e Eventos)
