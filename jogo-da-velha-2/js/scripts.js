@@ -3,6 +3,8 @@ let checarVez = true;
 const JOGADOR_X = "X";
 const JOGADOR_O = "O";
 
+atualizaMostrador();
+
 document.addEventListener("click", (event) => {
     if(event.target.matches(".celula")){
         jogar(event.target.id);
@@ -12,14 +14,17 @@ document.addEventListener("click", (event) => {
 function jogar(id){
     const celula = document.getElementById(id);
     vez = checarVez ? JOGADOR_X : JOGADOR_O;
-    celula.textContent = vez;
+    celula.textContent = vez; //quero conseguir colocar a imagem do x ou da bola no quadrinho correto
     checarVez = !checarVez;
-    //atualizando o mostrador
+    atualizaMostrador(); //tenho que garantir que na nona jogada ele não troque mais o jagador
+}
+
+function atualizaMostrador(){
     var player = document.querySelectorAll("div#mostrador img")[0];
-    if(vez == JOGADOR_X){
+    if(checarVez){
         player.setAttribute("src", "imagens/x.png");
     } else{
         player.setAttribute("src", "imagens/o.png");
     }
-    
 }
+
